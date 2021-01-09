@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame {
+            height: 300px;
+            width: 400px;
+            border: 10px solid gray;
+            border-radius: 8px;
+            position: relative;
+            margin: 12px;
+        }
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: antiquewhite;
+        }
+        img {
+            height: 300px;
+            width: 400px;
+        }
+        .photo-detail{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 300px;
+            width: 400px;
+            display: none;
+        }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: rgb(128, 128, 128,0.7);
+        }
+        .photo-frame:hover .photo-detail h1{
+            background-color: rgb(0, 0, 0,0.8);
+            color: white;
+            text-align: center;
+        }
+        .photo-frame:hover .photo-detail p{
+            color: white;
+            text-align: justify;
+            padding: 8px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trendy Photo Album</h1>
+
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+
+                <h1>Royal Bengal Tiger</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto aliquid deleniti
+                    assumenda alias optio inventore pariatur doloremque esse omnis sunt, molestias et quae facere ipsa
+                    commodi repellat exercitationem culpa?</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="lion.webp" alt="">
+            </div>
+            <div class="photo-detail">
+
+                <h1>The King - Lion</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto aliquid deleniti
+                    assumenda alias optio inventore pariatur doloremque esse omnis sunt, molestias et quae facere ipsa
+                    commodi repellat exercitationem culpa?</p>
+            </div>
+        </div><div class="photo-frame">
+            <div class="photo">
+                <img src="jiraf.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+
+                <h1>High Hill - Giraffe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto aliquid deleniti
+                    assumenda alias optio inventore pariatur doloremque esse omnis sunt, molestias et quae facere ipsa
+                    commodi repellat exercitationem culpa?</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
